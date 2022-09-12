@@ -17,7 +17,7 @@ class HomeController {
 
   void convert() {
     String text = toText.text;
-    double value = double.tryParse(text) ?? 1.0;
+    double value = double.tryParse(text.replaceAll(',', '.')) ?? 1.0;
     // ignore: unused_local_variable
     double returnValue = 0;
 

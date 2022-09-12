@@ -16,7 +16,7 @@ main() {
   });
 
   test('Deve converter de dolar para real', () {
-    toText.text = '1.0';
+    toText.text = '1,0';
     homeController.toCurrency = CurrencyModel(
         name: 'Dolar', real: 5.15, dolar: 1.0, euro: 0.98, bitcoin: 0.000088);
     homeController.fromCurrency = CurrencyModel(
